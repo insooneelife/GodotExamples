@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/ButtonExample.cs" type="Script" id=1]
+
+[node name="Button" type="Control"]
+margin_right = 1025.0
+margin_bottom = 599.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 448.0
+margin_top = 248.0
+margin_right = 542.0
+margin_bottom = 306.0
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="Button" to="Button" method="_OnPressed"]
